@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">kuis_2125250077</string>
+    <string-array name="arr_negara">
+        <item>Indonesia</item>
+        <item>Singapura</item>
+        <item>Malaysia</item>
+        <item>Cina</item>
+        <item>Jepang</item>
+        <item>Korea</item>
+    </string-array>
+</resources>

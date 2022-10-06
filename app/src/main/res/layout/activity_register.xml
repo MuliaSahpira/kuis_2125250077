@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="36sp"
+        android:textColor="#004D40"
+        android:textStyle="bold"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_create_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your new account"
+        android:textSize="15sp"
+        android:textColor="#8C8C8C"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register_text"
+        />
+
+    <EditText
+        android:id="@+id/et_fullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_create_new_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_person_24"
+        android:drawableTint="#33691E"
+        android:hint="Full Name"
+        android:textColorHint="#1C6758"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#80A8F1C8"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <Spinner
+        android:id="@+id/sp_negara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#1C6758"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#80A8F1C8"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="390dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/arr_negara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/sp_negara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_email_24"
+        android:drawableTint="#33691E"
+        android:hint="muliasahpira23@mhs.mdp.ac.id"
+        android:textColorHint="#1C6758"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#80A8F1C8"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock_24"
+        android:drawableTint="#33691E"
+        android:hint="Password"
+        android:textColorHint="#1C6758"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#80A8F1C8"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/et_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock_24"
+        android:drawableTint="#33691E"
+        android:hint="Confirm Password"
+        android:textColorHint="#1C6758"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#80A8F1C8"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:padding="16dp"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        android:backgroundTint="#1B5E20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
